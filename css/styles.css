@@ -15,13 +15,35 @@ body {
   --bc-footer-text: #f4f4fd;
   --bc-text-deck: #434455;
 }
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
-
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/**
+  |============================
+  | header
+  |============================
+*/
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-div {
+  display: flex;
+}
+.header-div-nav {
+  display: flex;
+  align-items: center;
+}
 .logotip {
   color: var(--logo-color1);
   font-family: 'Raleway', sans-serif;
@@ -31,17 +53,22 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logotip-part-two {
   color: var(--logo-color2);
 }
-
+.menu-main {
+  display: flex;
+  gap: 40px;
+}
 .menu-header {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--brand-color);
+  padding: 24px 0;
 }
 .menu-header:hover,
 .menu-header:focus {
@@ -56,8 +83,15 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/**
+  |============================
+  | First section
+  |============================
+*/
 .section-zakaz-service {
   background-color: var(--brand-color);
+  padding: 188px 0;
 }
 .zagolov-first {
   font-size: 56px;
@@ -65,15 +99,9 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
 }
-.zagolov-two {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--brand-color);
-}
+
 .button-main {
   background-color: #4d5ae5;
   font-family: 'Roboto', sans-serif;
@@ -82,11 +110,44 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .button-main:hover,
 .button-main:focus {
   background-color: var(--bc-button-fover);
   cursor: pointer;
+}
+/**
+  |============================
+  | Second section
+  |============================
+*/
+.section-features {
+  padding: 120px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-features-list {
+  display: flex;
+  gap: 24px;
+}
+.secfeat-list-li {
+  width: calc((100% - 72px) / 4);
 }
 .zagolov-three {
   font-weight: 500;
@@ -94,15 +155,61 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--brand-color);
+  margin-bottom: 8px;
+  text-align: center;
 }
 .features-desc {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--bc-text-deck);
+  text-align: center;
+  margin-bottom: 8px;
 }
+/**
+  |============================
+  | 3 section
+  |============================
+*/
+.section-doing {
+  padding-bottom: 120px;
+}
+.zagolov-two {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--brand-color);
+  margin-bottom: 72px;
+}
+.section-doing-list {
+  display: flex;
+  gap: 24px;
+}
+.section-doing-list-li {
+  width: calc((100% - 48px) / 3);
+}
+/**
+  |============================
+  | 4 section team
+  |============================
+*/
+
 .section-team {
   background-color: var(--bc-button);
+  padding: 120px 0;
+}
+.section-team-list {
+  display: flex;
+  gap: 24px;
+}
+.section-team-list-li {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card {
+  padding: 32px 16px;
 }
 .team-head {
   font-size: 36px;
@@ -112,7 +219,11 @@ body {
   text-transform: capitalize;
   color: var(--brand-color);
 }
-
+/**
+  |============================
+  | 
+  |============================
+*/
 .button-tip {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -121,6 +232,9 @@ body {
   letter-spacing: 0.04em;
   color: var(--bc-button-text);
   background-color: var(--bc-button);
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .team-fon {
   background-color: #ffffff;
@@ -130,6 +244,7 @@ body {
   color: var(--bc-button-text-hover);
   background-color: var(--bc-button-fover);
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .desk-portfolio {
@@ -138,7 +253,42 @@ body {
   letter-spacing: 0.02em;
   color: var(--bc-text-deck);
 }
+/**
+  |============================
+  | portfolio
+  |============================
+*/
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.section-portfolio-filtr {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-list-li {
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-link {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+/**
+  |============================
+  | footer
+  |============================
+*/
 .footer {
+  padding: 100px 0;
   background-color: var(--background-footer-color);
 }
 .footer-logo {
@@ -149,6 +299,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color1);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-footer-part-two {
   color: var(--bc-footer-text);
@@ -157,4 +309,5 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--bc-footer-text);
+  max-width: 264px;
 }
