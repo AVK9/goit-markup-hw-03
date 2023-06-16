@@ -172,7 +172,7 @@ img {
 .section-doing {
   padding-bottom: 120px;
 }
-.doing-name-section {
+.doing-head {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -193,7 +193,15 @@ img {
   | 4 section team
   |============================
 */
-
+.team-head {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--brand-color);
+  margin-bottom: 72px;
+}
 .section-team {
   background-color: var(--bc-button);
   padding: 120px 0;
