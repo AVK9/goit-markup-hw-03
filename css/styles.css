@@ -93,7 +93,7 @@ img {
   background-color: var(--brand-color);
   padding: 188px 0;
 }
-.zagolov-first {
+.zakaz-service-name {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -124,7 +124,7 @@ img {
 }
 /**
   |============================
-  | Second section
+  | Second section section-features
   |============================
 */
 .section-features {
@@ -149,32 +149,30 @@ img {
 .secfeat-list-li {
   width: calc((100% - 72px) / 4);
 }
-.zagolov-three {
+.feature-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--brand-color);
   margin-bottom: 8px;
-  text-align: center;
 }
-.features-desc {
+.feature-desc {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--bc-text-deck);
-  text-align: center;
   margin-bottom: 8px;
 }
 /**
   |============================
-  | 3 section
+  | 3 section section-doing
   |============================
 */
 .section-doing {
   padding-bottom: 120px;
 }
-.zagolov-two {
+.doing-name-section {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -219,6 +217,24 @@ img {
   text-transform: capitalize;
   color: var(--brand-color);
 }
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+  margin-bottom: 8px;
+  text-align: center;
+}
+.team-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--bc-text-deck);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
 /**
   |============================
   | 
@@ -281,6 +297,14 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+.portfolio-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+  margin-bottom: 8px;
 }
 /**
   |============================
