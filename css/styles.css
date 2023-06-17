@@ -146,8 +146,11 @@ img {
   display: flex;
   gap: 24px;
 }
+ul {
+  padding-left: 0;
+}
 .secfeat-list-li {
-  width: 271.5px;
+  width: calc((100% - 72px) / 4);
 }
 .feature-name {
   font-weight: 500;
